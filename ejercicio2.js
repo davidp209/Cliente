@@ -1,7 +1,16 @@
-window.onload=function(){ 
- let nombre = prompt("Introduce el nombre por pantalla");
-let edad = prompt("Introduce la edad")
-let esatadoCivil = prompt("Introduce el estado civil")
+window.onload=function(){
+let nombre;
+let edad;
+let estadoCivil;
+// otra forma de declarar las tres variables a la vez seria
+//let nombre, edad, estado civil;
 
-console.log=alert(nombre + " tiene " + edad + " años y su estado civil es " + esatadoCivil
-)}
+nombre="Antonio";
+edad=23;
+estadoCivil="aqui";
+
+console.log (nombre, " tiene ",
+    edad, " años y su estado civil es ", 
+    estadoCivil);
+
+}
