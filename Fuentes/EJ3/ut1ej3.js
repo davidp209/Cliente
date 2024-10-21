@@ -1,7 +1,8 @@
 window.onload = function () {
 
 
-    function ordenarFecha(a, b) {
+    function ordenarFecha(a, b) {//ordeno por fecha de consecucion, de esta manera voy comparando cada
+        //fecha qeu hay en el mok 
 
         const fechaA = new Date(a.fechaConsecucion.split('/').reverse().join('-'));
         const fechaB = new Date(b.fechaConsecucion.split('/').reverse().join('-'));
@@ -19,12 +20,10 @@ window.onload = function () {
 
 
     Ordenados.forEach(element => {
-        //forEach en reconocimientosOrdenados, cada element es uno de los objetos que han sido ordenados.
-        // Así que, dentro de la función forEach,
-        // element se refiere a uno de esos objetos y tiene acceso a todas sus propiedades, incluyendo nombre.
+       
         final.push({nombre: element.nombre, total: element.alumnos.length})
-        // cuenta cuántos alumnos hay en la propiedad alumnos del mismo objeto.
-        
+        //con este foreach en cada iteracion lo que hago es que me meta un elemento nuevo
+        //al array que he creado anteriormente 
     }
     );
 

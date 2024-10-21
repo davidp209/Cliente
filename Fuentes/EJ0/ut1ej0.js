@@ -2,7 +2,7 @@ window.onload = function() {
 
 	function ordenarPorNombre(usuario1, usuario2)  {	
 		
-	    let c1 = usuario1.toLowerCase();
+	    let c1 = usuario1.toLowerCase();//convierte todos los caracteres de una cadena a minúsculas
 		let c2 = usuario2.toLowerCase();
 
 		if (c1>c2) return 1;
