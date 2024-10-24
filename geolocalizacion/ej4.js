@@ -6,7 +6,7 @@ window.onload = function() {
    
    
     // Creamos el mapa con las coordenadas y el nivel de zooom
-    let mapa = L.map("mapa").setView([latitud_, longitud_], 15);	
+    let mapa = L.map("mapa").setView([latitud_, longitud_], 15);	//el 15 es el zoom 
 
 	//Añadimos un mapa base como tile layer, en este caso las imágenes de OSM
     L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 

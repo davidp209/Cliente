@@ -4,20 +4,20 @@ window.onload = function() {
 
    function verMapa (longitud_, latitud_) {
    
-	let posicion = new google.maps.LatLng(latitud_, longitud_);
+	let posicion = new google.maps.LatLng(latitud_, longitud_);//crea una posicion del mapa a traves de la longitud y la latitud
 	
 	// Opciones del mapa
-	let opciones = { zoom : 15,
+	let opciones = { zoom : 30,
 	                 center: posicion,
-					 myTypeId : google.maps.MapTypeId.ROADMAP 
-	                };
+					 myTypeId : google.maps.MapTypeId.ROADMAP //tipo se puede cambiar 
+	                };//meter los parametros que quereemso 
    
     // Mapa
-	let mapa = new google.maps.Map(document.getElementById("mapa"), opciones);
+	let mapa = new google.maps.Map(document.getElementById("mapa"), opciones);//con esto se crea el mapa 
 	
 	
 	// Marcador de ubicación
-	let miUbicacion = new google.maps.Marker({	
+	let miUbicacion = new google.maps.Marker({	//con esto la chincheta
 	   position : posicion,
 	   map      : mapa,
 	   title    : "Usted se encuentra aquí"
