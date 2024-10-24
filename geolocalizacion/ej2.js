@@ -2,6 +2,8 @@
 
 window.onload = function() { 
 
+	//el dia que se tenga que utilizar la geolocalizacion se utilizaria estos archivos
+
    // Función encargada de escribir en nuestro documento HTML la ubicación extraida 
    function obtenerCoordenadas (position) {
    
@@ -9,7 +11,7 @@ window.onload = function() {
 										 			   "Latitud = "   + position.coords.latitude  + "<br>" +
 													   "Altitud = "   + position.coords.altitude  + "<br>" + 
 													   "Precisión = " + position.coords.accuracy  + "<br>" +
-													   "Grados respecto al norte = " +	position.coords.heading + "<br>";
+													   "Grados respecto al norte = " +	position.coords.heading + "<br>";//esto no ira en el ordenador solo en dispositivos moviles
    }
    
    // Función encargada de gestionar los diferentes errores que se puede producir en el momento de la geolocalización
@@ -28,9 +30,9 @@ window.onload = function() {
    // Función encargada de lanzar el proceso de geolocalización con las opciones deseadas
    function generarLocalización() {
    
-		let opciones = { enableHighAccuracy : true,
-						 timeout : 6000,
-						 maximumAge : 4500}
+		let opciones = { enableHighAccuracy : true,//permite que la geolocalizacion sea lo mas accesible posible 
+						 timeout : 6000, //tiempo maximo en la qeu la API tiene que dar las cordenadas
+						 maximumAge : 4500}//tiempo que nuestra posicion que esta cacheada. depende de la aplicacion mas alto o mas bajo
    
 		navigator.geolocation.getCurrentPosition(obtenerCoordenadas, 
 		                                         gestionError, 
