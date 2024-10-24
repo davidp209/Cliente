@@ -39,7 +39,7 @@ window.onload = function() {
        let operando = valor.match(/[\+\-\*]/);
 
        const operando1 = operando[0]; // Toma el primer operador directamente
-       alert(operando1); //
+       alert(operando1); // kkl
        
 
        var url = window.location.href;
