@@ -2,7 +2,7 @@
 
 window.onload = function () {
 	let listacuadrado = [];
-	const numerodecuadrados = 5;
+	const numerodecuadrados = 30;
 
   class rectangulo {
     constructor() {
@@ -10,7 +10,7 @@ window.onload = function () {
       this.x = Math.random() * 575;
       this.y = 0;
       this.lado = 25;
-      this.velocidad = 1 + Math.random();
+      this.velocidad = (3 * Math.random()) +1;
       this.terminado = false;
     }
   }
@@ -61,7 +61,7 @@ window.onload = function () {
 
   crearListas();
 
-  let id = setInterval(generaAnimación, 1000 / 30);
+  let id = setInterval(generaAnimación, 5);
 
 
   generaAnimación();
