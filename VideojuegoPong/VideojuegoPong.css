@@ -1,1 +1,6 @@
-#miCanvas { border: solid 1px #ccc; margin: 20px; }
+#miCanvas { border: solid 1px #ccc; margin: 20px;
+background-image: url('/VideojuegoPong/assets/imagenes/top-view-illustration-table-tennis-ping-pong-table-table-tennis-ping-pong-top-view-illustration-301396492.webp' );
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+ }
